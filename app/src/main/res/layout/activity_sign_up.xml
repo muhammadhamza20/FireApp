@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="60dp"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/signUpEditName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Name.."
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/signUpEditAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Age.."
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/signUpEditEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email*.."
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/signUpEditPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password*..."
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signUpSignUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Sign up" />
+
+    <Button
+        android:id="@+id/signUpLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Already have an Account? LOGIN" />
+
+    <ProgressBar
+        android:id="@+id/signUpProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+</LinearLayout>

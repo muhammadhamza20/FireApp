@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="62dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/lgnEditEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email.."
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/lgnEditPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Password..."
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/lgnBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/lgnSignUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="Don't have an Account? SIGNUP" />
+
+    <ProgressBar
+        android:id="@+id/lgnProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone" />
+
+</LinearLayout>

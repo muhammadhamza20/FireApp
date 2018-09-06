@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/updateNewsLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/updateNewsLocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Location*: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/updateNewsEditLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/updateNewsLocationText"
+            android:layout_toRightOf="@id/updateNewsLocationText"
+            android:background="@drawable/custom_edittext_background"
+            android:hint="Enter Location.."
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/updateNewsCause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateNewsLocation"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/updateNewsCauseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Cause: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/updateNewsCauseSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/updateNewsDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateNewsCause"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/updateNewsDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Details: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/updateNewsEditDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/updateNewsDetailsText"
+            android:layout_toRightOf="@id/updateNewsDetailsText"
+            android:background="@drawable/custom_edittext_background"
+            android:hint="Enter Details.."
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/updateNewsPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateNewsDetails"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/updateNewsPictureText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Picture: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/updateNewsButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/updateNewsPictureText"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/updateNewsChoosePictureBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Choose" />
+
+            <Button
+                android:id="@+id/updateNewsCapturePictureBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="Capture" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/updateNewsImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateNewsPicture"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        tools:src="@drawable/ic_broken_image" />
+
+    <Button
+        android:id="@+id/updateNewsSubmitUpdateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Submit" />
+
+</RelativeLayout>
